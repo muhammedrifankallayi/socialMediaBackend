@@ -1,7 +1,7 @@
 require('dotenv').config()
-
+console.log("hiiii");
 const mongoose=require('mongoose')
-
+console.log(process.env.MONGO_URL)
 mongoose.connect(process.env.MONGO_URL)
 
 mongoose.connection.on('connected',()=>console.log("Chat db is ready...."))
