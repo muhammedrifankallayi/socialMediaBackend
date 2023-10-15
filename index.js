@@ -10,5 +10,5 @@ app.use("/api/chat/", chatRoutes);
 
 
 app.listen(port,()=>{
-    console.log("chat server running....")
+    console.log("chat server running.")
 })
