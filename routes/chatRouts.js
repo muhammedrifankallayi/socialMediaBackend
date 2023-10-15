@@ -4,6 +4,7 @@ const userControlls=require('../contoles/userControlls')
 
 
 chatRoutes.post('/register',userControlls.register)
+chatRoutes.post('/login',userControlls.userLogin)
 
 
 

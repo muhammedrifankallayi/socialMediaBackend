@@ -16,8 +16,12 @@ const userSchema=mongoose.Schema({
     mobile:{
         type:Number,
         required:true
+    },
+    date:{
+        type:Date,
+        default: new Date()
     }
 })
 
-const userModel=mongoose.model('user',userSchema)
-module.exports=userModel
+
+module.exports= mongoose.model('user',userSchema)
